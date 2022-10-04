@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/cb.gif);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+.container nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 0;
+
+}
+/* 
+.logo{
+    width: 120px;
+    cursor: pointer;
+} */
+
+.container nav h5{
+    color: white;
+    font-size: xxx-large;
+    /* font-family: ; */
+}
+
+
+.container nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.container nav ul li{
+    display: inline-table;
+    list-style: none;
+    margin: 20px;
+}
+
+.container nav ul li a{
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+
+.container nav ul li a::after{
+    content: '';
+    width: 0%;
+    height:3px;
+    position: absolute;
+    bottom: -4;
+    left: 50%;
+    transform: translateX(-50%);
+    background: violet;
+    transition: width 0.3s;
+}
+
+.container nav ul li a:hover::after{
+    width: 80%;
+
+}
+
+.text{
+    color: white;
+    position:absolute;
+    bottom: 7%;
+}
+.text p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text h1{
+    font-size: 190px;
+    line-height: 160px;
+    font-weight: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(/images/back.png);
+    /* background-image: linear-gradient(red, blue); */
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation:  back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2500 0;
+    }
+}
+
+.text h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.buttons button {
+    margin-top: 5px;
+    padding: 9px 9px;
+    border-radius: 15px;
+    border-color: violet;
+    color: white;
+    margin: 3px;
+    background-color:violet;
+    cursor: pointer;
+
+}
+
+.text button:hover{
+    background-color:white;
+    color:violet;
+}
+
+.soical-icon{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.soical-icon img{
+    width: 27px;
+    display: block;
+    margin: 20px 5px;
+    /* background-color: violet; */
+    /* color: white; */
+    border-radius: 16px;
+    border-color: violet;
+    cursor: pointer;
+    /* margin: 12px; */
+    padding: 2px;
+}
+
+
+.telegram{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.instagram{
+    position: absolute;
+    right: 5%;
+    bottom: 14%;
+}
+
+.telegram img{
+    width: 27px;
+    display: block;
+    margin: 20px 5px;
+    /* background-color: violet; */
+    /* color: white; */
+    border-radius: 16px;
+    /* border-color: violet; */
+    cursor: pointer;
+    /* margin: 12px; */
+    padding: 2px;
+}
+
+.telegram img:hover{
+    background-color:skyblue;
+    color:transparent;
+
+}
+
+.instagram img{
+    width: 27px;
+    display: block;
+    margin: 20px 5px;
+    /* background-color: linear-gradient(violet, blue); */
+    color: white;
+    border-radius: 16px;
+    /* border-color: violet; */
+    cursor: pointer;
+    /* margin: 12px; */
+    padding: 2px;
+}
+
+.instagram img:hover{
+    /* background-image:linear-gradient(violet, blue);
+    color:transparent; */
+
+     background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
